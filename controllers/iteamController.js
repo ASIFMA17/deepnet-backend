@@ -86,10 +86,10 @@ exports.deleteIteam = async (req, res, next) => {
     try {
 
         const { id } = req.query;
-        // console.log(id);
+        console.log(id);
 
         const deleteIteam = await Iteam.findByIdAndDelete(id);
-        // console.log(deleteAccount);
+        console.log(deleteAccount);
 
         if (!deleteIteam) {
             return res.status(500).json({
